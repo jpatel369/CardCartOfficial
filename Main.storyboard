@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="O49-XV-tXq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="HlX-pe-hV1">
+            <objects>
+                <viewController id="IXv-1H-Wny" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vf3-K5-DiK"/>
+                        <viewControllerLayoutGuide type="bottom" id="FsD-BW-V2O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sF0-qn-idz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jay's logo" translatesAutoresizingMaskIntoConstraints="NO" id="7Ne-Fj-m1I">
+                                <rect key="frame" x="30" y="55" width="315" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7Ne-Fj-m1I" secondAttribute="height" multiplier="5:2" id="1Jg-su-jG7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you have any questions or concerns plese contact:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbk-n1-dum">
+                                <rect key="frame" x="30" y="178" width="315" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="bEm-G0-GWP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="© JP Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dC0-9h-C7S">
+                                <rect key="frame" x="16" y="585" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Credits: Icon 8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Tw-kj-LYd">
+                                <rect key="frame" x="263" y="585" width="96" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mycardcart@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhQ-Aw-8Eg">
+                                <rect key="frame" x="21" y="315" width="333" height="37"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wbk-n1-dum" firstAttribute="centerX" secondItem="sF0-qn-idz" secondAttribute="centerX" id="40A-4j-cjv"/>
+                            <constraint firstItem="7Ne-Fj-m1I" firstAttribute="top" secondItem="Vf3-K5-DiK" secondAttribute="bottom" constant="35" id="5h8-Iv-6Y8"/>
+                            <constraint firstItem="wbk-n1-dum" firstAttribute="leading" secondItem="sF0-qn-idz" secondAttribute="leading" constant="30" id="BQE-Kk-ebP"/>
+                            <constraint firstItem="7Ne-Fj-m1I" firstAttribute="leading" secondItem="sF0-qn-idz" secondAttribute="leading" constant="30" id="Ecb-N9-oYw"/>
+                            <constraint firstItem="7Ne-Fj-m1I" firstAttribute="centerX" secondItem="sF0-qn-idz" secondAttribute="centerX" id="Hqn-q4-hbW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YhQ-Aw-8Eg" secondAttribute="trailing" constant="5" id="NqE-Gm-f5L"/>
+                            <constraint firstItem="YhQ-Aw-8Eg" firstAttribute="leading" secondItem="sF0-qn-idz" secondAttribute="leadingMargin" constant="5" id="ZvT-Dt-WDp"/>
+                            <constraint firstAttribute="trailing" secondItem="7Ne-Fj-m1I" secondAttribute="trailing" constant="30" id="l8Y-Oz-QIV"/>
+                            <constraint firstItem="YhQ-Aw-8Eg" firstAttribute="centerX" secondItem="sF0-qn-idz" secondAttribute="centerX" id="n1D-uc-Kik"/>
+                            <constraint firstAttribute="trailing" secondItem="wbk-n1-dum" secondAttribute="trailing" constant="30" id="nbj-6v-2w4"/>
+                            <constraint firstItem="YhQ-Aw-8Eg" firstAttribute="centerY" secondItem="sF0-qn-idz" secondAttribute="centerY" id="oCJ-3B-8pq"/>
+                            <constraint firstItem="wbk-n1-dum" firstAttribute="top" secondItem="Vf3-K5-DiK" secondAttribute="bottom" constant="158" id="odb-Nt-526"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="grj-ab-jZ3" colorLabel="IBBuiltInLabel-Green"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8mr-9B-cTY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1304.8" y="667.91604197901052"/>
+        </scene>
+        <!--My Wallet-->
+        <scene sceneID="wPK-To-2RV">
+            <objects>
+                <navigationController id="rgh-rg-xBU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Wallet" image="icons8-Wallet_30" selectedImage="icons8-Wallet_30" id="M7x-ym-RaT"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VNN-Uv-4Ab">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Fke-MR-2Gz" kind="relationship" relationship="rootViewController" id="EKn-31-8Ah"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4c4-Jg-jAU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="754" y="-71"/>
+        </scene>
+        <!--CardCart-->
+        <scene sceneID="vZj-kB-o3x">
+            <objects>
+                <collectionViewController id="Fke-MR-2Gz" customClass="MyWalletCollectionViewController" customModule="CardCartOfficial" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="B65-NJ-a7c" customClass="MyWalletCo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YgD-bd-lBH">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="1"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyWalletCollectionViewCell" id="LhN-St-Luo" customClass="MyWalletCollectionViewCell" customModule="CardCartOfficial" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="10" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a3-I9-qP7">
+                                            <rect key="frame" x="35" y="40" width="90" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="2a3-I9-qP7" secondAttribute="height" multiplier="9:8" id="DH0-3M-Ygc"/>
+                                                <constraint firstAttribute="height" constant="80" id="af5-Vo-tcS"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="1600 (1)"/>
+                                            <connections>
+                                                <segue destination="EGa-uX-E0i" kind="show" id="3tM-uo-FHA"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfR-1a-CY2">
+                                            <rect key="frame" x="18" y="119" width="125" height="21"/>
+                                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="2a3-I9-qP7" firstAttribute="centerX" secondItem="LhN-St-Luo" secondAttribute="centerX" id="8OB-yn-Sdm"/>
+                                    <constraint firstItem="PfR-1a-CY2" firstAttribute="leading" secondItem="LhN-St-Luo" secondAttribute="leadingMargin" constant="10" id="CTQ-Wh-9ty"/>
+                                    <constraint firstItem="2a3-I9-qP7" firstAttribute="centerY" secondItem="LhN-St-Luo" secondAttribute="centerY" id="T23-8Y-vlY"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="PfR-1a-CY2" secondAttribute="bottom" constant="12" id="gQE-wg-nkw"/>
+                                    <constraint firstItem="PfR-1a-CY2" firstAttribute="centerX" secondItem="LhN-St-Luo" secondAttribute="centerX" id="ka4-Yl-GC0"/>
+                                </constraints>
+                                <size key="customSize" width="160" height="160"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddCardCollectionViewCell" id="3QI-gn-Qpj" customClass="AddCellCollectionViewCell" customModule="CardCartOfficial" customModuleProvider="target">
+                                <rect key="frame" x="215" y="10" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSP-Yh-85d">
+                                            <rect key="frame" x="45" y="40" width="70" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="aSP-Yh-85d" secondAttribute="height" multiplier="7:8" id="Hzx-hG-tcS"/>
+                                                <constraint firstAttribute="height" constant="80" id="v1b-CE-IN1"/>
+                                            </constraints>
+                                            <state key="normal" image="finances-15-512"/>
+                                            <connections>
+                                                <segue destination="syz-ai-W1g" kind="show" id="moP-27-3h3"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receipts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hr8-ED-hbw">
+                                            <rect key="frame" x="40" y="119" width="81" height="21"/>
+                                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottomMargin" secondItem="Hr8-ED-hbw" secondAttribute="bottom" constant="12" id="28N-Kv-Pa3"/>
+                                    <constraint firstItem="Hr8-ED-hbw" firstAttribute="centerX" secondItem="3QI-gn-Qpj" secondAttribute="centerX" id="h5F-wd-rYb"/>
+                                    <constraint firstItem="aSP-Yh-85d" firstAttribute="centerX" secondItem="3QI-gn-Qpj" secondAttribute="centerX" id="lLM-4B-jLa"/>
+                                    <constraint firstItem="aSP-Yh-85d" firstAttribute="centerY" secondItem="3QI-gn-Qpj" secondAttribute="centerY" id="vKZ-aF-VNv"/>
+                                    <constraint firstItem="Hr8-ED-hbw" firstAttribute="leading" secondItem="3QI-gn-Qpj" secondAttribute="leadingMargin" constant="32" id="ycR-Nb-oXJ"/>
+                                </constraints>
+                                <size key="customSize" width="160" height="160"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Fke-MR-2Gz" id="Hep-iG-hxr"/>
+                            <outlet property="delegate" destination="Fke-MR-2Gz" id="RgA-yF-f7W"/>
+                        </connections>
+                    </collectionView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="CardCart" id="Rpd-SB-YOJ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QxV-yb-QfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1797.5999999999999" y="-72.413793103448285"/>
+        </scene>
+        <!--Business Cards-->
+        <scene sceneID="7FT-5L-JEh">
+            <objects>
+                <tableViewController id="Al7-3i-juL" customClass="BusinessCardTableViewController" customModule="CardCartOfficial" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="bEa-Xb-bZZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="QHt-Fc-oF9">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="businessCardTableViewCell" rowHeight="70" id="E9B-S3-91r" customClass="BusinessCardTableViewCell" customModule="CardCartOfficial" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E9B-S3-91r" id="204-dx-yme">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uov-Jc-5QA">
+                                            <rect key="frame" x="8" y="8" width="359" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                            <color key="textColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Qp-4F-OTS">
+                                            <rect key="frame" x="272" y="0.0" width="95" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COa-XI-TyY">
+                                            <rect key="frame" x="8" y="37" width="359" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                            <color key="textColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="bcImageView" destination="7Qp-4F-OTS" id="f0h-qO-lqP"/>
+                                    <outlet property="bcItemCompanyLabel" destination="COa-XI-TyY" id="oGZ-k5-yfU"/>
+                                    <outlet property="bcItemTitleLabel" destination="uov-Jc-5QA" id="EiE-Ph-Ed2"/>
+                                    <segue destination="IT2-ZQ-QC9" kind="show" identifier="displayBusinessCard" id="2HH-Bo-3vE"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Al7-3i-juL" id="WeP-40-L3J"/>
+                            <outlet property="delegate" destination="Al7-3i-juL" id="u3L-D9-EM8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Business Cards" id="MIK-Yv-Ofz">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="X8p-xv-p5m">
+                            <color key="tintColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="Vwn-oP-WQi" kind="unwind" identifier="" unwindAction="unwindToMyWalletCollectionViewController:" id="vtq-rw-vkg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="jYZ-Q6-dsz">
+                            <color key="tintColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="IT2-ZQ-QC9" kind="show" identifier="addBusinessCard" id="Jit-WJ-YBw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Hd-ma-JCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Vwn-oP-WQi" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3848.8000000000002" y="-18.440779610194905"/>
+        </scene>
+        <!--Add Business Card-->
+        <scene sceneID="S4a-yS-6vx">
+            <objects>
+                <viewController id="IT2-ZQ-QC9" customClass="DisplayBusinessCardsViewController" customModule="CardCartOfficial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vB4-h4-0K6"/>
+                        <viewControllerLayoutGuide type="bottom" id="F1l-Qv-KRC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1dF-ro-ctI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rbJ-XG-rdD">
+                                <rect key="frame" x="0.0" y="341" width="375" height="326"/>
+                                <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XLL-hf-hId">
+                                <rect key="frame" x="168.5" y="485.5" width="37" height="37"/>
+                                <color key="color" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2xl-CW-tSZ">
+                                <rect key="frame" x="50" y="82" width="275" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Company" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w5R-Dq-mpK">
+                                <rect key="frame" x="50" y="130" width="275" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aXF-e4-EGu">
+                                <rect key="frame" x="112.5" y="239" width="150" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="z4Z-sw-NIY"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Stt-QM-Nwk" customClass="AddPhotoButton" customModule="CardCartOfficial" customModuleProvider="target">
+                                <rect key="frame" x="112.5" y="178" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="4NN-FJ-FJB"/>
+                                    <constraint firstAttribute="height" constant="40" id="XHv-gx-4rA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                <state key="normal" title="Add Photo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addPhotoButtonTapped:" destination="IT2-ZQ-QC9" eventType="touchUpInside" id="L07-qa-qdK"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="YaW-ll-4c8">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YaW-ll-4c8" firstAttribute="centerY" secondItem="1dF-ro-ctI" secondAttribute="centerY" id="3hp-1k-vi5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2xl-CW-tSZ" secondAttribute="trailing" constant="34" id="B5S-Yw-35C"/>
+                            <constraint firstItem="aXF-e4-EGu" firstAttribute="top" secondItem="Stt-QM-Nwk" secondAttribute="bottom" constant="21" id="F49-J1-y8Q"/>
+                            <constraint firstAttribute="trailing" secondItem="rbJ-XG-rdD" secondAttribute="trailing" id="HL6-Tt-03f"/>
+                            <constraint firstItem="2xl-CW-tSZ" firstAttribute="width" secondItem="w5R-Dq-mpK" secondAttribute="width" id="KE5-YG-aPD"/>
+                            <constraint firstItem="XLL-hf-hId" firstAttribute="centerX" secondItem="rbJ-XG-rdD" secondAttribute="centerX" id="NTG-7X-pNW"/>
+                            <constraint firstItem="XLL-hf-hId" firstAttribute="centerY" secondItem="rbJ-XG-rdD" secondAttribute="centerY" id="QGG-aD-JtJ"/>
+                            <constraint firstItem="Stt-QM-Nwk" firstAttribute="centerX" secondItem="1dF-ro-ctI" secondAttribute="centerX" id="SqE-lY-dY0"/>
+                            <constraint firstItem="rbJ-XG-rdD" firstAttribute="leading" secondItem="1dF-ro-ctI" secondAttribute="leading" id="UBW-mO-K4U"/>
+                            <constraint firstItem="rbJ-XG-rdD" firstAttribute="top" secondItem="aXF-e4-EGu" secondAttribute="bottom" constant="22" id="UUO-hf-OcW"/>
+                            <constraint firstItem="2xl-CW-tSZ" firstAttribute="leading" secondItem="w5R-Dq-mpK" secondAttribute="leading" id="VYt-wY-K9r"/>
+                            <constraint firstItem="2xl-CW-tSZ" firstAttribute="top" secondItem="vB4-h4-0K6" secondAttribute="bottom" constant="18" id="YLf-Lt-4aA"/>
+                            <constraint firstItem="YaW-ll-4c8" firstAttribute="centerX" secondItem="1dF-ro-ctI" secondAttribute="centerX" id="b4Y-DL-A7C"/>
+                            <constraint firstItem="w5R-Dq-mpK" firstAttribute="top" secondItem="2xl-CW-tSZ" secondAttribute="bottom" constant="18" id="fmZ-Em-ZnB"/>
+                            <constraint firstAttribute="bottom" secondItem="rbJ-XG-rdD" secondAttribute="bottom" id="gZ8-gh-Vt6"/>
+                            <constraint firstItem="aXF-e4-EGu" firstAttribute="width" secondItem="Stt-QM-Nwk" secondAttribute="width" id="llh-Zx-NgT"/>
+                            <constraint firstItem="Stt-QM-Nwk" firstAttribute="top" secondItem="w5R-Dq-mpK" secondAttribute="bottom" constant="18" id="oQa-ZK-wwh"/>
+                            <constraint firstItem="2xl-CW-tSZ" firstAttribute="leading" secondItem="1dF-ro-ctI" secondAttribute="leadingMargin" constant="34" id="pcv-2x-oD1"/>
+                            <constraint firstItem="aXF-e4-EGu" firstAttribute="centerX" secondItem="1dF-ro-ctI" secondAttribute="centerX" id="use-xJ-cCm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Business Card" id="hBe-1V-qrF">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="7EW-VS-emE">
+                            <color key="tintColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="XwN-Nf-yK4" kind="unwind" identifier="backToTableViewSegue" unwindAction="unwindToBusinessCardsTableViewController:" id="2e6-jW-uVL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="eLt-MC-9k5">
+                            <color key="tintColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="saveButton:" destination="IT2-ZQ-QC9" id="Diy-tY-b1E"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addPhotoButton" destination="Stt-QM-Nwk" id="Mfd-3R-oW4"/>
+                        <outlet property="bcActivityIndicator" destination="XLL-hf-hId" id="BOB-u3-l8W"/>
+                        <outlet property="bcImageView" destination="aXF-e4-EGu" id="Syk-Zc-W3L"/>
+                        <outlet property="bcSaveActivityIndicator" destination="YaW-ll-4c8" id="rE1-0y-wvr"/>
+                        <outlet property="bcresultTextView" destination="rbJ-XG-rdD" id="GvP-V5-2xQ"/>
+                        <outlet property="enterBusinessCardCompany" destination="w5R-Dq-mpK" id="opg-NY-GFr"/>
+                        <outlet property="enterBusinessCardTitle" destination="2xl-CW-tSZ" id="uFr-Db-flD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mCO-3G-Yht" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XwN-Nf-yK4" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4820.625" y="-62.323943661971832"/>
+        </scene>
+        <!--Receipts-->
+        <scene sceneID="GYw-3x-tJA">
+            <objects>
+                <tableViewController id="ZKX-89-orm" customClass="ReceiptsTableViewController" customModule="CardCartOfficial" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="SvB-8V-MQZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="XC0-pS-ivh">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="receiptsTableViewCell" rowHeight="70" id="3Wh-F5-GVG" customClass="ReceiptsTableViewCell" customModule="CardCartOfficial" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Wh-F5-GVG" id="yHd-KL-bH5">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVr-Or-htp">
+                                            <rect key="frame" x="8" y="0.0" width="359" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                            <color key="textColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tyk-Qe-HPc">
+                                            <rect key="frame" x="276" y="-2" width="95" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5O0-pq-jQ9">
+                                            <rect key="frame" x="8" y="38" width="359" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                            <color key="textColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="rImageView" destination="Tyk-Qe-HPc" id="pwJ-ZV-PSB"/>
+                                    <outlet property="rItemStoreLabel" destination="5O0-pq-jQ9" id="ZNQ-Hg-mKH"/>
+                                    <outlet property="rItemTitleLabel" destination="HVr-Or-htp" id="nh6-Bh-X2J"/>
+                                    <segue destination="edE-Ov-tAc" kind="show" identifier="displayReceipt" id="Acr-6e-kLf"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZKX-89-orm" id="aWK-Nk-Xp5"/>
+                            <outlet property="delegate" destination="ZKX-89-orm" id="Fgl-Nf-1kR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Receipts" id="mzZ-18-tzR">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="D0j-vg-k4S">
+                            <color key="tintColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="mdL-8m-bEl" kind="unwind" unwindAction="unwindToMyWalletCollectionViewController:" id="jBg-Ul-qrR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pC0-qI-Lsi">
+                            <color key="tintColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="edE-Ov-tAc" kind="show" identifier="addReceipt" id="xWi-NF-4XV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lm3-dv-225" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="mdL-8m-bEl" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3624.8000000000002" y="652.62368815592208"/>
+        </scene>
+        <!--Add Receipt-->
+        <scene sceneID="wej-Hn-Kzr">
+            <objects>
+                <viewController id="edE-Ov-tAc" customClass="DisplayReceiptsViewController" customModule="CardCartOfficial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gny-pl-FQz"/>
+                        <viewControllerLayoutGuide type="bottom" id="UHO-6X-udz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qme-jT-XkC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zwD-aV-SPI">
+                                <rect key="frame" x="0.0" y="341" width="430" height="326"/>
+                                <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LEs-CK-Gas">
+                                <rect key="frame" x="50" y="82" width="275" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNn-Jd-ULD" customClass="AddPhotoR" customModule="CardCartOfficial" customModuleProvider="target">
+                                <rect key="frame" x="112.5" y="178" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EQQ-z9-YNe"/>
+                                    <constraint firstAttribute="width" constant="150" id="GJp-pj-wjb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="21"/>
+                                <state key="normal" title="Add Photo ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="receiptAddPhotoButtonTapped:" destination="edE-Ov-tAc" eventType="touchUpInside" id="JZR-pJ-lYC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Store" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xYL-Gz-10m">
+                                <rect key="frame" x="50" y="130" width="275" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SQC-cM-B4n">
+                                <rect key="frame" x="112.5" y="239" width="150" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="3ID-yy-c8j"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="SPz-cT-yYq">
+                                <rect key="frame" x="169" y="486" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zwD-aV-SPI" secondAttribute="bottom" id="4ib-iC-W6T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LEs-CK-Gas" secondAttribute="trailing" constant="34" id="B6l-Pb-852"/>
+                            <constraint firstItem="zwD-aV-SPI" firstAttribute="top" secondItem="SQC-cM-B4n" secondAttribute="bottom" constant="22" id="BLx-gl-UMx"/>
+                            <constraint firstItem="SQC-cM-B4n" firstAttribute="width" secondItem="uNn-Jd-ULD" secondAttribute="width" id="DpJ-To-EQv"/>
+                            <constraint firstItem="zwD-aV-SPI" firstAttribute="leading" secondItem="Qme-jT-XkC" secondAttribute="leading" id="HDI-OG-Iix"/>
+                            <constraint firstItem="LEs-CK-Gas" firstAttribute="centerX" secondItem="Qme-jT-XkC" secondAttribute="centerX" id="Hbm-FH-urk"/>
+                            <constraint firstItem="LEs-CK-Gas" firstAttribute="top" secondItem="Gny-pl-FQz" secondAttribute="bottom" constant="18" id="Ju2-ah-CM4"/>
+                            <constraint firstItem="SQC-cM-B4n" firstAttribute="centerX" secondItem="Qme-jT-XkC" secondAttribute="centerX" id="PN9-yv-d6f"/>
+                            <constraint firstItem="uNn-Jd-ULD" firstAttribute="centerX" secondItem="Qme-jT-XkC" secondAttribute="centerX" id="QEl-rm-kPH"/>
+                            <constraint firstItem="SQC-cM-B4n" firstAttribute="top" secondItem="uNn-Jd-ULD" secondAttribute="bottom" constant="21" id="Tne-zY-j4q"/>
+                            <constraint firstItem="xYL-Gz-10m" firstAttribute="top" secondItem="LEs-CK-Gas" secondAttribute="bottom" constant="18" id="VaF-bC-b1y"/>
+                            <constraint firstItem="xYL-Gz-10m" firstAttribute="width" secondItem="LEs-CK-Gas" secondAttribute="width" id="bNg-lk-7uE"/>
+                            <constraint firstItem="LEs-CK-Gas" firstAttribute="leading" secondItem="Qme-jT-XkC" secondAttribute="leadingMargin" constant="34" id="cyu-xr-JLo"/>
+                            <constraint firstItem="xYL-Gz-10m" firstAttribute="centerX" secondItem="Qme-jT-XkC" secondAttribute="centerX" id="fIl-xM-Gfd"/>
+                            <constraint firstItem="uNn-Jd-ULD" firstAttribute="top" secondItem="xYL-Gz-10m" secondAttribute="bottom" constant="18" id="kU4-Ud-3vH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zwD-aV-SPI" secondAttribute="trailing" constant="-71" id="oot-8K-HeL"/>
+                            <constraint firstItem="xYL-Gz-10m" firstAttribute="top" secondItem="LEs-CK-Gas" secondAttribute="bottom" constant="18" id="xbo-0U-Och"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Receipt" id="dQa-GQ-9Jr">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="RdL-gS-n5M">
+                            <color key="tintColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="fx4-4b-ubq" kind="unwind" identifier="cancelR" unwindAction="unwindToReceiptsTableViewController:" id="XVo-a3-KF0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Gfy-ZE-1IW">
+                            <color key="tintColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="fx4-4b-ubq" kind="unwind" identifier="saveR" unwindAction="unwindToReceiptsTableViewController:" id="DUQ-hl-54J"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="rActivityIndicator" destination="SPz-cT-yYq" id="Hze-Yi-e63"/>
+                        <outlet property="rImageView" destination="SQC-cM-B4n" id="xrz-bp-eco"/>
+                        <outlet property="receiptAddPhoto" destination="uNn-Jd-ULD" id="R1l-fJ-O7K"/>
+                        <outlet property="receiptEnterStore" destination="xYL-Gz-10m" id="X38-bC-a5p"/>
+                        <outlet property="receiptEnterTitle" destination="LEs-CK-Gas" id="aYh-Tc-mWm"/>
+                        <outlet property="resultTextView" destination="zwD-aV-SPI" id="iAB-0f-QxA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sai-S3-e0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fx4-4b-ubq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4432.5" y="643.30985915492954"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="YzS-yU-1I0">
+            <objects>
+                <tabBarController id="O49-XV-tXq" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="KMe-vJ-LAr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rgh-rg-xBU" kind="relationship" relationship="viewControllers" id="BQD-m7-FmV"/>
+                        <segue destination="IXv-1H-Wny" kind="relationship" relationship="viewControllers" id="84m-f3-m0z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bey-BG-R56" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-458" y="78"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="O6l-aS-5mE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EGa-uX-E0i" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jby-XG-urF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Al7-3i-juL" kind="relationship" relationship="rootViewController" id="9tm-fF-NNG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QzA-XX-mwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3010" y="-18"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5zZ-04-GVK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="syz-ai-W1g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3GX-sc-8Sr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZKX-89-orm" kind="relationship" relationship="rootViewController" id="LyV-OU-TCR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VHW-me-504" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2375" y="560"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1600 (1)" width="1600" height="1600"/>
+        <image name="Jay's logo" width="1939" height="685"/>
+        <image name="finances-15-512" width="512" height="512"/>
+        <image name="icons8-Wallet_30" width="30" height="30"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Jit-WJ-YBw"/>
+        <segue reference="xWi-NF-4XV"/>
+    </inferredMetricsTieBreakers>
+</document>

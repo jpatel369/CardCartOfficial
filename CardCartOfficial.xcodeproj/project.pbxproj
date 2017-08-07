@@ -7,14 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78E1ED562EA363D7595F40F6 /* Pods_CardCartOfficialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BCD98BF983D336CFC5A558 /* Pods_CardCartOfficialTests.framework */; };
+		B64456541F3177650048AB1B /* FinishSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64456531F3177650048AB1B /* FinishSignUpViewController.swift */; };
+		B6BC602F1F33DA8200070756 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BC602D1F33DA8200070756 /* AdSupport.framework */; };
+		B6BC60301F33DA8200070756 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BC602E1F33DA8200070756 /* iAd.framework */; };
+		B6BC60351F38D65E00070756 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC60341F38D65E00070756 /* Storyboard+Utility.swift */; };
+		B6BC60371F38D67200070756 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC60361F38D67200070756 /* Receipt.swift */; };
+		B6BC60391F38D68500070756 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC60381F38D68500070756 /* User.swift */; };
+		B6BC603B1F38D6A400070756 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC603A1F38D6A400070756 /* Constants.swift */; };
+		B6BC603D1F38D6CC00070756 /* DisplayBusinessCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC603C1F38D6CC00070756 /* DisplayBusinessCardsViewController.swift */; };
+		B6BC603F1F38D6DB00070756 /* DisplayReceiptsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC603E1F38D6DB00070756 /* DisplayReceiptsViewController.swift */; };
+		B6BC60411F38D6EE00070756 /* BusinessCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC60401F38D6EE00070756 /* BusinessCardTableViewController.swift */; };
+		B6BC60431F38D6FE00070756 /* ReceiptsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC60421F38D6FE00070756 /* ReceiptsTableViewController.swift */; };
+		B6BC60451F38D70F00070756 /* BusinessCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC60441F38D70F00070756 /* BusinessCardTableViewCell.swift */; };
+		B6BC60471F38D71F00070756 /* ReceiptsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC60461F38D71F00070756 /* ReceiptsTableViewCell.swift */; };
+		B6BC60491F38D72F00070756 /* MyWalletCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC60481F38D72F00070756 /* MyWalletCollectionViewController.swift */; };
+		B6BC604B1F38D73800070756 /* MyWalletCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC604A1F38D73800070756 /* MyWalletCollectionViewCell.swift */; };
+		B6BC604D1F38D74600070756 /* AddCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC604C1F38D74600070756 /* AddCellCollectionViewCell.swift */; };
+		B6BC604F1F38D75800070756 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC604E1F38D75800070756 /* LoginViewController.swift */; };
+		B6BC60511F38D76500070756 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC60501F38D76500070756 /* MoreViewController.swift */; };
+		B6BC60531F38D77500070756 /* AddPhotoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC60521F38D77500070756 /* AddPhotoButton.swift */; };
+		B6BC60551F38D78100070756 /* AddPhotoR.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC60541F38D78100070756 /* AddPhotoR.swift */; };
+		B6BC60571F38D7B900070756 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BC60561F38D7B900070756 /* Main.storyboard */; };
+		B6BC60591F38D7CF00070756 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BC60581F38D7CF00070756 /* Login.storyboard */; };
+		B6BC605B1F38D7DD00070756 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6BC605A1F38D7DD00070756 /* GoogleService-Info.plist */; };
 		B6FD0ED71F267AF400AA0C53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FD0ED61F267AF400AA0C53 /* AppDelegate.swift */; };
 		B6FD0ED91F267AF400AA0C53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FD0ED81F267AF400AA0C53 /* ViewController.swift */; };
-		B6FD0EDC1F267AF400AA0C53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FD0EDA1F267AF400AA0C53 /* Main.storyboard */; };
 		B6FD0EDF1F267AF400AA0C53 /* CardCartOfficial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6FD0EDD1F267AF400AA0C53 /* CardCartOfficial.xcdatamodeld */; };
 		B6FD0EE11F267AF400AA0C53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6FD0EE01F267AF400AA0C53 /* Assets.xcassets */; };
 		B6FD0EE41F267AF400AA0C53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FD0EE21F267AF400AA0C53 /* LaunchScreen.storyboard */; };
 		B6FD0EEF1F267AF400AA0C53 /* CardCartOfficialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FD0EEE1F267AF400AA0C53 /* CardCartOfficialTests.swift */; };
 		B6FD0EFA1F267AF400AA0C53 /* CardCartOfficialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FD0EF91F267AF400AA0C53 /* CardCartOfficialUITests.swift */; };
+		B6FD0FEE1F269DD200AA0C53 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FD0FED1F269DD200AA0C53 /* CoreDataHelper.swift */; };
+		BB4ED3A80943120EBE0ABB09 /* Pods_CardCartOfficial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770CC380E9D50F2466622191 /* Pods_CardCartOfficial.framework */; };
+		C00CB84D78E5DE1CA21FF539 /* Pods_CardCartOfficialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8FC9DDAE62C66541FF27AB /* Pods_CardCartOfficialUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +61,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1910E6365B85B66E9496D4FE /* Pods-CardCartOfficialUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCartOfficialUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardCartOfficialUITests/Pods-CardCartOfficialUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		69CC9E94A622636DF3FF8FDF /* Pods-CardCartOfficialUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCartOfficialUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardCartOfficialUITests/Pods-CardCartOfficialUITests.release.xcconfig"; sourceTree = "<group>"; };
+		71BCD98BF983D336CFC5A558 /* Pods_CardCartOfficialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardCartOfficialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		770CC380E9D50F2466622191 /* Pods_CardCartOfficial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardCartOfficial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C235EEAED198393F39D770A /* Pods-CardCartOfficialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCartOfficialTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardCartOfficialTests/Pods-CardCartOfficialTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F8FC9DDAE62C66541FF27AB /* Pods_CardCartOfficialUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardCartOfficialUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A285A0BFD63CFEA0A04BD981 /* Pods-CardCartOfficialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCartOfficialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardCartOfficialTests/Pods-CardCartOfficialTests.release.xcconfig"; sourceTree = "<group>"; };
+		B64456531F3177650048AB1B /* FinishSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishSignUpViewController.swift; sourceTree = "<group>"; };
+		B6BC602D1F33DA8200070756 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		B6BC602E1F33DA8200070756 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		B6BC60341F38D65E00070756 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
+		B6BC60361F38D67200070756 /* Receipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		B6BC60381F38D68500070756 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B6BC603A1F38D6A400070756 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B6BC603C1F38D6CC00070756 /* DisplayBusinessCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayBusinessCardsViewController.swift; sourceTree = "<group>"; };
+		B6BC603E1F38D6DB00070756 /* DisplayReceiptsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayReceiptsViewController.swift; sourceTree = "<group>"; };
+		B6BC60401F38D6EE00070756 /* BusinessCardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCardTableViewController.swift; sourceTree = "<group>"; };
+		B6BC60421F38D6FE00070756 /* ReceiptsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptsTableViewController.swift; sourceTree = "<group>"; };
+		B6BC60441F38D70F00070756 /* BusinessCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCardTableViewCell.swift; sourceTree = "<group>"; };
+		B6BC60461F38D71F00070756 /* ReceiptsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptsTableViewCell.swift; sourceTree = "<group>"; };
+		B6BC60481F38D72F00070756 /* MyWalletCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWalletCollectionViewController.swift; sourceTree = "<group>"; };
+		B6BC604A1F38D73800070756 /* MyWalletCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWalletCollectionViewCell.swift; sourceTree = "<group>"; };
+		B6BC604C1F38D74600070756 /* AddCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		B6BC604E1F38D75800070756 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B6BC60501F38D76500070756 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		B6BC60521F38D77500070756 /* AddPhotoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotoButton.swift; sourceTree = "<group>"; };
+		B6BC60541F38D78100070756 /* AddPhotoR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotoR.swift; sourceTree = "<group>"; };
+		B6BC60561F38D7B900070756 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B6BC60581F38D7CF00070756 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B6BC605A1F38D7DD00070756 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B6FD0ED31F267AF400AA0C53 /* CardCartOfficial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardCartOfficial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FD0ED61F267AF400AA0C53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6FD0ED81F267AF400AA0C53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B6FD0EDB1F267AF400AA0C53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6FD0EDE1F267AF400AA0C53 /* CardCartOfficial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CardCartOfficial.xcdatamodel; sourceTree = "<group>"; };
 		B6FD0EE01F267AF400AA0C53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6FD0EE31F267AF400AA0C53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +104,9 @@
 		B6FD0EF51F267AF400AA0C53 /* CardCartOfficialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardCartOfficialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FD0EF91F267AF400AA0C53 /* CardCartOfficialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCartOfficialUITests.swift; sourceTree = "<group>"; };
 		B6FD0EFB1F267AF400AA0C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6FD0FED1F269DD200AA0C53 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		BEA50892EB4C9959A37D4EFE /* Pods-CardCartOfficial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCartOfficial.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardCartOfficial/Pods-CardCartOfficial.release.xcconfig"; sourceTree = "<group>"; };
+		F9D8E2D996F781011E8CBF2D /* Pods-CardCartOfficial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCartOfficial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardCartOfficial/Pods-CardCartOfficial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +114,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6BC602F1F33DA8200070756 /* AdSupport.framework in Frameworks */,
+				B6BC60301F33DA8200070756 /* iAd.framework in Frameworks */,
+				BB4ED3A80943120EBE0ABB09 /* Pods_CardCartOfficial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E1ED562EA363D7595F40F6 /* Pods_CardCartOfficialTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +132,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00CB84D78E5DE1CA21FF539 /* Pods_CardCartOfficialUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86F10E90C30DEA4E9F569ACC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9D8E2D996F781011E8CBF2D /* Pods-CardCartOfficial.debug.xcconfig */,
+				BEA50892EB4C9959A37D4EFE /* Pods-CardCartOfficial.release.xcconfig */,
+				9C235EEAED198393F39D770A /* Pods-CardCartOfficialTests.debug.xcconfig */,
+				A285A0BFD63CFEA0A04BD981 /* Pods-CardCartOfficialTests.release.xcconfig */,
+				1910E6365B85B66E9496D4FE /* Pods-CardCartOfficialUITests.debug.xcconfig */,
+				69CC9E94A622636DF3FF8FDF /* Pods-CardCartOfficialUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B6FD0ECA1F267AF400AA0C53 = {
 			isa = PBXGroup;
 			children = (
+				B6FD0F0F1F268D8F00AA0C53 /* Storyboards */,
+				B6FD0F0E1F268D6E00AA0C53 /* Supporting Files */,
+				B6FD0F0D1F268D4900AA0C53 /* Models */,
+				B6FD0F0C1F268D2400AA0C53 /* Services */,
+				B6FD0F0B1F268D1900AA0C53 /* Extensions */,
+				B6FD0F0A1F268CE400AA0C53 /* Collection View Stuff */,
+				B6FD0F091F268CD400AA0C53 /* Table View Stuff */,
+				B6FD0F081F268CA800AA0C53 /* View Controllers */,
+				B6FD0F071F268C8300AA0C53 /* Helpers */,
 				B6FD0ED51F267AF400AA0C53 /* CardCartOfficial */,
 				B6FD0EED1F267AF400AA0C53 /* CardCartOfficialTests */,
 				B6FD0EF81F267AF400AA0C53 /* CardCartOfficialUITests */,
 				B6FD0ED41F267AF400AA0C53 /* Products */,
+				86F10E90C30DEA4E9F569ACC /* Pods */,
+				BEAA9A5A795EA44B8159EB7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +188,6 @@
 			children = (
 				B6FD0ED61F267AF400AA0C53 /* AppDelegate.swift */,
 				B6FD0ED81F267AF400AA0C53 /* ViewController.swift */,
-				B6FD0EDA1F267AF400AA0C53 /* Main.storyboard */,
 				B6FD0EE01F267AF400AA0C53 /* Assets.xcassets */,
 				B6FD0EE21F267AF400AA0C53 /* LaunchScreen.storyboard */,
 				B6FD0EE51F267AF400AA0C53 /* Info.plist */,
@@ -128,6 +214,103 @@
 			path = CardCartOfficialUITests;
 			sourceTree = "<group>";
 		};
+		B6FD0F071F268C8300AA0C53 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B6FD0FED1F269DD200AA0C53 /* CoreDataHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		B6FD0F081F268CA800AA0C53 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6BC60521F38D77500070756 /* AddPhotoButton.swift */,
+				B6BC60541F38D78100070756 /* AddPhotoR.swift */,
+				B6BC604E1F38D75800070756 /* LoginViewController.swift */,
+				B6BC60501F38D76500070756 /* MoreViewController.swift */,
+				B64456531F3177650048AB1B /* FinishSignUpViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B6FD0F091F268CD400AA0C53 /* Table View Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				B6BC60461F38D71F00070756 /* ReceiptsTableViewCell.swift */,
+				B6BC60441F38D70F00070756 /* BusinessCardTableViewCell.swift */,
+				B6BC60421F38D6FE00070756 /* ReceiptsTableViewController.swift */,
+				B6BC60401F38D6EE00070756 /* BusinessCardTableViewController.swift */,
+				B6BC603E1F38D6DB00070756 /* DisplayReceiptsViewController.swift */,
+				B6BC603C1F38D6CC00070756 /* DisplayBusinessCardsViewController.swift */,
+			);
+			name = "Table View Stuff";
+			sourceTree = "<group>";
+		};
+		B6FD0F0A1F268CE400AA0C53 /* Collection View Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				B6BC604C1F38D74600070756 /* AddCellCollectionViewCell.swift */,
+				B6BC604A1F38D73800070756 /* MyWalletCollectionViewCell.swift */,
+				B6BC60481F38D72F00070756 /* MyWalletCollectionViewController.swift */,
+			);
+			name = "Collection View Stuff";
+			sourceTree = "<group>";
+		};
+		B6FD0F0B1F268D1900AA0C53 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6BC60341F38D65E00070756 /* Storyboard+Utility.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B6FD0F0C1F268D2400AA0C53 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		B6FD0F0D1F268D4900AA0C53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6BC60381F38D68500070756 /* User.swift */,
+				B6BC60361F38D67200070756 /* Receipt.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B6FD0F0E1F268D6E00AA0C53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6BC605A1F38D7DD00070756 /* GoogleService-Info.plist */,
+				B6BC603A1F38D6A400070756 /* Constants.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6FD0F0F1F268D8F00AA0C53 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B6BC60581F38D7CF00070756 /* Login.storyboard */,
+				B6BC60561F38D7B900070756 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		BEAA9A5A795EA44B8159EB7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6BC602D1F33DA8200070756 /* AdSupport.framework */,
+				B6BC602E1F33DA8200070756 /* iAd.framework */,
+				770CC380E9D50F2466622191 /* Pods_CardCartOfficial.framework */,
+				71BCD98BF983D336CFC5A558 /* Pods_CardCartOfficialTests.framework */,
+				9F8FC9DDAE62C66541FF27AB /* Pods_CardCartOfficialUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +318,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6FD0EFE1F267AF400AA0C53 /* Build configuration list for PBXNativeTarget "CardCartOfficial" */;
 			buildPhases = (
+				983333E8376B713F16128ACA /* [CP] Check Pods Manifest.lock */,
 				B6FD0ECF1F267AF400AA0C53 /* Sources */,
 				B6FD0ED01F267AF400AA0C53 /* Frameworks */,
 				B6FD0ED11F267AF400AA0C53 /* Resources */,
+				A985541E62EA6C30FC1B25FD /* [CP] Embed Pods Frameworks */,
+				048B9A4B214882C620C17738 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +338,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6FD0F011F267AF400AA0C53 /* Build configuration list for PBXNativeTarget "CardCartOfficialTests" */;
 			buildPhases = (
+				7E76605859114A6CC21FE3CC /* [CP] Check Pods Manifest.lock */,
 				B6FD0EE61F267AF400AA0C53 /* Sources */,
 				B6FD0EE71F267AF400AA0C53 /* Frameworks */,
 				B6FD0EE81F267AF400AA0C53 /* Resources */,
+				96A90CB03DB3FA0AB2F8DCC9 /* [CP] Embed Pods Frameworks */,
+				B22B0487C0D70EAEFC5703BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +359,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6FD0F041F267AF400AA0C53 /* Build configuration list for PBXNativeTarget "CardCartOfficialUITests" */;
 			buildPhases = (
+				BD6978179CBB2BB61C81D4E0 /* [CP] Check Pods Manifest.lock */,
 				B6FD0EF11F267AF400AA0C53 /* Sources */,
 				B6FD0EF21F267AF400AA0C53 /* Frameworks */,
 				B6FD0EF31F267AF400AA0C53 /* Resources */,
+				20E5496256CDCC2114E29B77 /* [CP] Embed Pods Frameworks */,
+				E1DBD5289ECA2D5A45926491 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,8 +431,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6FD0EE41F267AF400AA0C53 /* LaunchScreen.storyboard in Resources */,
+				B6BC60571F38D7B900070756 /* Main.storyboard in Resources */,
+				B6BC605B1F38D7DD00070756 /* GoogleService-Info.plist in Resources */,
 				B6FD0EE11F267AF400AA0C53 /* Assets.xcassets in Resources */,
-				B6FD0EDC1F267AF400AA0C53 /* Main.storyboard in Resources */,
+				B6BC60591F38D7CF00070756 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +454,171 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		048B9A4B214882C620C17738 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardCartOfficial/Pods-CardCartOfficial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20E5496256CDCC2114E29B77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardCartOfficialUITests/Pods-CardCartOfficialUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E76605859114A6CC21FE3CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96A90CB03DB3FA0AB2F8DCC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardCartOfficialTests/Pods-CardCartOfficialTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		983333E8376B713F16128ACA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A985541E62EA6C30FC1B25FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardCartOfficial/Pods-CardCartOfficial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B22B0487C0D70EAEFC5703BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardCartOfficialTests/Pods-CardCartOfficialTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD6978179CBB2BB61C81D4E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1DBD5289ECA2D5A45926491 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardCartOfficialUITests/Pods-CardCartOfficialUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B6FD0ECF1F267AF400AA0C53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6BC604D1F38D74600070756 /* AddCellCollectionViewCell.swift in Sources */,
+				B6BC604B1F38D73800070756 /* MyWalletCollectionViewCell.swift in Sources */,
+				B6BC60531F38D77500070756 /* AddPhotoButton.swift in Sources */,
+				B6BC603B1F38D6A400070756 /* Constants.swift in Sources */,
+				B6FD0FEE1F269DD200AA0C53 /* CoreDataHelper.swift in Sources */,
+				B6BC60351F38D65E00070756 /* Storyboard+Utility.swift in Sources */,
 				B6FD0ED91F267AF400AA0C53 /* ViewController.swift in Sources */,
+				B6BC60431F38D6FE00070756 /* ReceiptsTableViewController.swift in Sources */,
+				B6BC60471F38D71F00070756 /* ReceiptsTableViewCell.swift in Sources */,
+				B6BC60551F38D78100070756 /* AddPhotoR.swift in Sources */,
+				B6BC604F1F38D75800070756 /* LoginViewController.swift in Sources */,
+				B64456541F3177650048AB1B /* FinishSignUpViewController.swift in Sources */,
+				B6BC60391F38D68500070756 /* User.swift in Sources */,
 				B6FD0ED71F267AF400AA0C53 /* AppDelegate.swift in Sources */,
 				B6FD0EDF1F267AF400AA0C53 /* CardCartOfficial.xcdatamodeld in Sources */,
+				B6BC60511F38D76500070756 /* MoreViewController.swift in Sources */,
+				B6BC60491F38D72F00070756 /* MyWalletCollectionViewController.swift in Sources */,
+				B6BC603D1F38D6CC00070756 /* DisplayBusinessCardsViewController.swift in Sources */,
+				B6BC60411F38D6EE00070756 /* BusinessCardTableViewController.swift in Sources */,
+				B6BC603F1F38D6DB00070756 /* DisplayReceiptsViewController.swift in Sources */,
+				B6BC60371F38D67200070756 /* Receipt.swift in Sources */,
+				B6BC60451F38D70F00070756 /* BusinessCardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +654,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B6FD0EDA1F267AF400AA0C53 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6FD0EDB1F267AF400AA0C53 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B6FD0EE21F267AF400AA0C53 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -417,12 +760,13 @@
 		};
 		B6FD0EFF1F267AF400AA0C53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9D8E2D996F781011E8CBF2D /* Pods-CardCartOfficial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JFZQ9JUDD3;
 				INFOPLIST_FILE = CardCartOfficial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jpapps.CardCartOfficial;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpapps.CardCart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -430,12 +774,13 @@
 		};
 		B6FD0F001F267AF400AA0C53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEA50892EB4C9959A37D4EFE /* Pods-CardCartOfficial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JFZQ9JUDD3;
 				INFOPLIST_FILE = CardCartOfficial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jpapps.CardCartOfficial;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpapps.CardCart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -443,6 +788,7 @@
 		};
 		B6FD0F021F267AF400AA0C53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C235EEAED198393F39D770A /* Pods-CardCartOfficialTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -458,6 +804,7 @@
 		};
 		B6FD0F031F267AF400AA0C53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A285A0BFD63CFEA0A04BD981 /* Pods-CardCartOfficialTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -473,6 +820,7 @@
 		};
 		B6FD0F051F267AF400AA0C53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1910E6365B85B66E9496D4FE /* Pods-CardCartOfficialUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = JFZQ9JUDD3;
@@ -487,6 +835,7 @@
 		};
 		B6FD0F061F267AF400AA0C53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69CC9E94A622636DF3FF8FDF /* Pods-CardCartOfficialUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = JFZQ9JUDD3;
@@ -518,6 +867,7 @@
 				B6FD0F001F267AF400AA0C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6FD0F011F267AF400AA0C53 /* Build configuration list for PBXNativeTarget "CardCartOfficialTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +876,7 @@
 				B6FD0F031F267AF400AA0C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6FD0F041F267AF400AA0C53 /* Build configuration list for PBXNativeTarget "CardCartOfficialUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +885,7 @@
 				B6FD0F061F267AF400AA0C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

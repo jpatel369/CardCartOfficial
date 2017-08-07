@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="F2N-no-r9V">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="qct-44-R9x">
+            <objects>
+                <viewController id="uie-Zg-Af9" customClass="LoginViewController" customModule="CardCartOfficial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xee-jY-s5o"/>
+                        <viewControllerLayoutGuide type="bottom" id="H3z-8n-gRv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P7E-DF-kHG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiE-c8-T3N">
+                                <rect key="frame" x="51" y="311.5" width="273" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.5725490196078431" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="JNT-87-lp7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="19"/>
+                                <state key="normal" title="Login or Register">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="uie-Zg-Af9" eventType="touchUpInside" id="0ss-Yh-yys"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="IEU-RI-bE6">
+                                <rect key="frame" x="36" y="45" width="303" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CardCart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdp-1L-QeY">
+                                        <rect key="frame" x="30" y="0.0" width="243" height="72"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="45"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="237" ambiguous="YES" text="Welcome to CardCart a place to store all your receipts and business cards." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpY-8c-twq">
+                                        <rect key="frame" x="11" y="99" width="281" height="101"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kpY-8c-twq" firstAttribute="leading" secondItem="IEU-RI-bE6" secondAttribute="leading" constant="11" id="ROZ-WS-7Yb"/>
+                                    <constraint firstItem="tdp-1L-QeY" firstAttribute="leading" secondItem="IEU-RI-bE6" secondAttribute="leading" constant="30" id="WuO-48-gXo"/>
+                                    <constraint firstAttribute="height" constant="200" id="fm6-ty-7tH"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28187582975898695" green="0.80784313725490198" blue="0.59999999999999998" alpha="0.9021832191780822" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="PiE-c8-T3N" secondAttribute="trailing" constant="35" id="ARM-CF-8FJ"/>
+                            <constraint firstItem="IEU-RI-bE6" firstAttribute="leading" secondItem="P7E-DF-kHG" secondAttribute="leadingMargin" constant="20" id="B6L-RS-28A"/>
+                            <constraint firstItem="IEU-RI-bE6" firstAttribute="trailing" secondItem="P7E-DF-kHG" secondAttribute="trailingMargin" constant="-20" id="NK1-hz-e66"/>
+                            <constraint firstItem="PiE-c8-T3N" firstAttribute="leading" secondItem="P7E-DF-kHG" secondAttribute="leadingMargin" constant="35" id="Pek-Ui-6Mf"/>
+                            <constraint firstItem="PiE-c8-T3N" firstAttribute="centerY" secondItem="P7E-DF-kHG" secondAttribute="centerY" id="RQb-mT-7SV"/>
+                            <constraint firstItem="IEU-RI-bE6" firstAttribute="top" secondItem="Xee-jY-s5o" secondAttribute="bottom" constant="25" id="SHB-qK-IdV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PZI-fe-zmA"/>
+                    <connections>
+                        <outlet property="loginButton" destination="PiE-c8-T3N" id="irj-VB-1zh"/>
+                        <segue destination="rnr-VL-XbH" kind="show" identifier="toFinishSignIn" id="XYB-Gv-j3J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vqQ-R4-qnx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="160.56971514242881"/>
+        </scene>
+        <!--Finish Sign Up View Controller-->
+        <scene sceneID="Xec-5M-BwT">
+            <objects>
+                <viewController id="rnr-VL-XbH" customClass="FinishSignUpViewController" customModule="CardCartOfficial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qre-bC-asp"/>
+                        <viewControllerLayoutGuide type="bottom" id="HEH-LV-Ahl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Y0-dN-ZF2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psR-OS-iOi">
+                                <rect key="frame" x="51" y="311.5" width="273" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.5725490196078431" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="in8-F3-L6F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="rnr-VL-XbH" eventType="touchUpInside" id="pWa-XJ-rj5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jay's logo" translatesAutoresizingMaskIntoConstraints="NO" id="T2O-Ql-bkE">
+                                <rect key="frame" x="15" y="514" width="345" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="T2O-Ql-bkE" secondAttribute="height" multiplier="5:2" id="cGN-Cd-x5X"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBt-dj-HH9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="266"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press next to being listing business cards and receipts!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLb-G5-eaG">
+                                        <rect key="frame" x="23" y="58" width="329" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="ewJ-V5-3mO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="27"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="OLb-G5-eaG" firstAttribute="centerX" secondItem="yBt-dj-HH9" secondAttribute="centerX" id="CJd-c1-oj7"/>
+                                    <constraint firstItem="OLb-G5-eaG" firstAttribute="leading" secondItem="yBt-dj-HH9" secondAttribute="leadingMargin" constant="15" id="NkS-kJ-J2J"/>
+                                    <constraint firstItem="OLb-G5-eaG" firstAttribute="centerY" secondItem="yBt-dj-HH9" secondAttribute="centerY" id="T7Q-aw-Rao"/>
+                                    <constraint firstAttribute="width" secondItem="yBt-dj-HH9" secondAttribute="height" multiplier="375:266" id="rmb-uT-e5d"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="OLb-G5-eaG" secondAttribute="trailing" constant="15" id="xqy-5h-Bsx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yBt-dj-HH9" firstAttribute="top" secondItem="Qre-bC-asp" secondAttribute="bottom" id="0we-py-vrr"/>
+                            <constraint firstItem="yBt-dj-HH9" firstAttribute="leading" secondItem="4Y0-dN-ZF2" secondAttribute="leading" id="Dtc-Ws-9UQ"/>
+                            <constraint firstItem="HEH-LV-Ahl" firstAttribute="top" secondItem="T2O-Ql-bkE" secondAttribute="bottom" constant="15" id="H8X-a9-7Dx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="psR-OS-iOi" secondAttribute="trailing" constant="35" id="LOR-GY-DXS"/>
+                            <constraint firstItem="T2O-Ql-bkE" firstAttribute="leading" secondItem="4Y0-dN-ZF2" secondAttribute="leading" constant="15" id="Rza-f4-PzW"/>
+                            <constraint firstAttribute="trailing" secondItem="yBt-dj-HH9" secondAttribute="trailing" id="U2k-sP-ltx"/>
+                            <constraint firstItem="psR-OS-iOi" firstAttribute="centerX" secondItem="4Y0-dN-ZF2" secondAttribute="centerX" id="UQa-al-mxa"/>
+                            <constraint firstItem="psR-OS-iOi" firstAttribute="centerY" secondItem="4Y0-dN-ZF2" secondAttribute="centerY" id="jkr-2c-spp"/>
+                            <constraint firstItem="T2O-Ql-bkE" firstAttribute="centerX" secondItem="4Y0-dN-ZF2" secondAttribute="centerX" id="jxH-Kn-1mC"/>
+                            <constraint firstAttribute="trailing" secondItem="T2O-Ql-bkE" secondAttribute="trailing" constant="15" id="qiw-wL-rda"/>
+                            <constraint firstItem="psR-OS-iOi" firstAttribute="leading" secondItem="4Y0-dN-ZF2" secondAttribute="leadingMargin" constant="35" id="xvn-mr-eTB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="psR-OS-iOi" id="eeA-L2-OZp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qPe-fT-qFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1943.2" y="160.56971514242881"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uAS-qd-Eoq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="F2N-no-r9V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IPH-FL-6kf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uie-Zg-Af9" kind="relationship" relationship="rootViewController" id="Ju8-zY-hYW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EEI-A3-rJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="160.56971514242881"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Jay's logo" width="1939" height="685"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_CardCartOfficial {
+  umbrella header "Pods-CardCartOfficial-umbrella.h"
+
+  export *
+  module * { export * }
+}
