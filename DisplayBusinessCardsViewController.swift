@@ -16,6 +16,7 @@ class DisplayBusinessCardsViewController: UIViewController, UIImagePickerControl
     var image: UIImage?
     var businesscard: BusinessCardData?
 
+    @IBOutlet weak var saveView: UIView!
     @IBOutlet weak var bcSaveActivityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var bcActivityIndicator: UIActivityIndicatorView!
    @IBOutlet weak var addPhotoButton: AddPhotoButton!
@@ -36,7 +37,10 @@ class DisplayBusinessCardsViewController: UIViewController, UIImagePickerControl
     @IBAction func saveButton(_ sender: Any)
     {
         performSegue(withIdentifier: "backToTableViewSegue", sender: self)
-
+        
+//        bcSaveActivityIndicator.startAnimating()
+//        bcSaveActivityIndicator.isHidden = false
+//        saveView.isHidden = false
         
        //CoreDataHelper.saveBusinessCard(title: enterBusinessCardTitle.text!, company: enterBusinessCardCompany.text!, image: bcImageView.image!)
 
@@ -87,9 +91,14 @@ class DisplayBusinessCardsViewController: UIViewController, UIImagePickerControl
         return(true)
     }
     
-    func keyboardWillGoUp(notification:NSNotification) {
-        if let keyboardSize = (notification.userInfo? [UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            self.view.frame.origin.y -= 30 //keyboardSize.height
+    func keyboardWillGoUp(notification:NSNotification)
+    {
+        if bcresultTextView.isFirstResponder
+        {
+            if let keyboardSize = (notification.userInfo? [UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue
+            {
+                self.view.frame.origin.y -= 210
+            }
         }
     }
     
@@ -186,6 +195,10 @@ class DisplayBusinessCardsViewController: UIViewController, UIImagePickerControl
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+//        bcSaveActivityIndicator.isHidden = true
+//        bcSaveActivityIndicator.stopAnimating()
+//        saveView.isHidden = true
+
     }
     
     func resizeImageIfNeededAndReturnData(image: UIImage) -> Data {

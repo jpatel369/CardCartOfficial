@@ -10,14 +10,29 @@ import UIKit
 
 class ReceiptsTableViewController: UITableViewController {
     
-    var receipts = [Receipt]() {
+    var receipts = [ReceiptData]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
+    var filteredReceipts = [ReceiptData]() {
         didSet {
             tableView.reloadData()
         }
     }
 
+    let searchController = UISearchController(searchResultsController: nil)
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        searchController.searchBar.delegate = self
+        
+        tableView.tableHeaderView = searchController.searchBar
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -25,8 +40,10 @@ class ReceiptsTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let receipts = CoreDataHelper.loadData(type: .RECEIPT) as? [ReceiptData]
-        for receipt in receipts!{
+        if let savedReceipts = CoreDataHelper.loadData(type: .RECEIPT) as? [ReceiptData] {
+            self.receipts = savedReceipts
+        }
+        /*for receipt in receipts!{
             let newReceipt = Receipt()
             
 
@@ -57,9 +74,20 @@ class ReceiptsTableViewController: UITableViewController {
             newReceipt.image = UIImage(data: receipt.image! as Data)
             self.receipts.append(newReceipt)
         }
-        
-        
+*/
     }
+    
+    func filterTableForSearchText(searchText: String, scope: String = "All") {
+        
+        filteredReceipts = receipts.filter { receipts in
+            
+            return (receipts.title?.lowercased().contains(searchText.lowercased()))!
+            
+        }
+        
+        tableView.reloadData()
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -76,23 +104,38 @@ class ReceiptsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        if searchController.isActive && (searchController.searchBar.text?.characters.count)! > 0 {
+            
+            return filteredReceipts.count
+            
+        } else {
+        
         return receipts.count
+        }
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let receipt: ReceiptData?
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "receiptsTableViewCell", for: indexPath) as! ReceiptsTableViewCell
         
         
         let row = indexPath.row
         
+        if searchController.isActive && (searchController.searchBar.text?.characters.count)! > 0 {
+            
+            receipt = filteredReceipts[row]
+            
+        } else {
         
-        let receipt = receipts[row]
+         receipt = receipts[row]
+        }
         
         
-        cell.rItemTitleLabel.text = receipt.title
-        cell.rItemStoreLabel.text = receipt.store
+        cell.rItemTitleLabel.text = receipt?.title
+        cell.rItemStoreLabel.text = receipt?.store
         
         //cell.rItemModificationTimeLabel.text = receipt.modificationTime.convertToString()
         
@@ -114,7 +157,14 @@ class ReceiptsTableViewController: UITableViewController {
                 
                 let displayReceiptsViewController = segue.destination as! DisplayReceiptsViewController
                 
-                displayReceiptsViewController.receipt = receipt
+                if searchController.isActive && (searchController.searchBar.text?.characters.count)! > 0 {
+                    
+                    displayReceiptsViewController.receipt = filteredReceipts[indexPath.row]
+                    
+                } else {
+                
+                displayReceiptsViewController.receipt = receipts[indexPath.row]
+                }
                 
             } else if identifier == "addReceipt" {
                 print("+ button tapped")
@@ -208,4 +258,12 @@ class ReceiptsTableViewController: UITableViewController {
     }
     */
 
+}
+
+extension ReceiptsTableViewController: UISearchResultsUpdating, UISearchBarDelegate, UITextFieldDelegate {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        filterTableForSearchText(searchText: searchController.searchBar.text!)
+    }
+    
 }

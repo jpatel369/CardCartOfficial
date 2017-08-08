@@ -12,7 +12,7 @@ import Alamofire
 
 class DisplayReceiptsViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIGestureRecognizerDelegate, UITextViewDelegate, UITextFieldDelegate  {
     var image: UIImage?
-    var receipt: Receipt?
+    var receipt: ReceiptData?
     
 
     @IBOutlet weak var rActivityIndicator: UIActivityIndicatorView!
@@ -26,13 +26,19 @@ class DisplayReceiptsViewController: UIViewController, UIImagePickerControllerDe
     override func viewDidLoad() {
         super.viewDidLoad()
         self.image = nil
+        
         if let receipt = receipt {
             
             receiptEnterTitle.text = receipt.title
             receiptEnterStore.text = receipt.store
             resultTextView.text = receipt.info
-            rImageView.image = receipt.image
-            
+           
+            if let imageData = receipt.image,
+                let savedImage = UIImage.init(data: imageData as Data) {
+                rImageView.image = savedImage
+                self.image = savedImage
+            }
+
         } else {
             
             receiptEnterTitle.text = ""
@@ -40,10 +46,11 @@ class DisplayReceiptsViewController: UIViewController, UIImagePickerControllerDe
             resultTextView.text = ""
             rImageView.image = nil
             
+        }
+        
             receiptEnterStore.delegate = self
             receiptEnterTitle.delegate = self
             resultTextView.delegate = self
-        }
         
             NotificationCenter.default.addObserver(self, selector: #selector(DisplayReceiptsViewController.keyboardWillGoUp(notification:)) , name: NSNotification.Name.UIKeyboardWillShow, object: nil)
             
@@ -65,8 +72,13 @@ class DisplayReceiptsViewController: UIViewController, UIImagePickerControllerDe
         }
         
         func keyboardWillGoUp(notification:NSNotification) {
+            
+            if resultTextView.isFirstResponder
+            {
+
             if let keyboardSize = (notification.userInfo? [UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-                self.view.frame.origin.y -= 30 //keyboardSize.height
+                self.view.frame.origin.y -= 210
+                }
             }
         }
         
@@ -151,26 +163,24 @@ class DisplayReceiptsViewController: UIViewController, UIImagePickerControllerDe
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let receiptTableViewController = segue.destination as! ReceiptsTableViewController
         if segue.identifier == "saveR" {
-            if let receipt = receipt {
+           
+            if receipt == nil {
                 
-                receipt.title = receiptEnterTitle.text ?? ""
-                receipt.store = receiptEnterStore.text ?? ""
-                receipt.info = resultTextView.text ?? ""
-                receipt.image = rImageView.image ?? nil
-                receiptTableViewController.tableView.reloadData()
+                receipt = CoreDataHelper.newReceipt()
                 
+                receiptTableViewController.receipts.append(receipt!)
                 
-            } else {
-                // 3
-                let newReceipt = Receipt()
-                newReceipt.title = receiptEnterTitle.text ?? ""
-                newReceipt.store = receiptEnterStore.text ?? ""
-                newReceipt.info = resultTextView.text ?? ""
-                newReceipt.image = rImageView.image ?? nil
-                receiptTableViewController.receipts.append(newReceipt)
-                
-                CoreDataHelper.saveRecepitCard(title: newReceipt.title, store: newReceipt.store, info: newReceipt.info, image: newReceipt.image)
             }
+            // Setting card values
+            receipt!.title = receiptEnterTitle.text ?? ""
+            receipt!.store = receiptEnterStore.text ?? ""
+            receipt!.info = resultTextView.text ?? ""
+            if let image = rImageView.image,
+                let imageData = UIImageJPEGRepresentation(image, 0.7) {
+                receipt!.image = imageData as NSData
+            }
+            // save to core data
+            CoreDataHelper.save()
         }
     }
 

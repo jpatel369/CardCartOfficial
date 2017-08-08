@@ -15,13 +15,27 @@ class BusinessCardTableViewController: UITableViewController {
         didSet {
             tableView.reloadData()
         }
-        
-        
-        
     }
+    
+    var filteredBusinesscards = [BusinessCardData]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
+    let searchController = UISearchController(searchResultsController: nil)
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        searchController.searchBar.delegate = self
+        
+        tableView.tableHeaderView = searchController.searchBar
+        
 
         if let savedBusinessCards = CoreDataHelper.loadData(type: .BUSINESS_CARD) as? [BusinessCardData] {
             self.businesscards = savedBusinessCards
@@ -66,6 +80,20 @@ class BusinessCardTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
+        
+    }
+    
+    func filterTableForSearchText(searchText: String, scope: String = "All") {
+        
+        filteredBusinesscards = businesscards.filter { businesscards in
+        
+        return (businesscards.title?.lowercased().contains(searchText.lowercased()))!
+            
+        }
+        
+        tableView.reloadData()
     }
     
 
@@ -85,22 +113,44 @@ class BusinessCardTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        
+        
+        
+        if searchController.isActive && (searchController.searchBar.text?.characters.count)! > 0 {
+       
+            return filteredBusinesscards.count
+            
+        } else {
+        
         return businesscards.count
+            
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let businesscard: BusinessCardData?
        
         let cell = tableView.dequeueReusableCell(withIdentifier: "businessCardTableViewCell", for: indexPath) as! BusinessCardTableViewCell
         
     
         let row = indexPath.row
         
+        if searchController.isActive && (searchController.searchBar.text?.characters.count)! > 0 {
+            
+            businesscard = filteredBusinesscards[row]
+            
+        } else {
         
-        let businesscard = businesscards[row]
+        
+         businesscard = businesscards[row]
+            
+        }
         
         
-        cell.bcItemTitleLabel.text = businesscard.title
-        cell.bcItemCompanyLabel.text = businesscard.company
+        cell.bcItemTitleLabel.text = businesscard?.title
+        cell.bcItemCompanyLabel.text = businesscard?.company
+        //added question marks
         
         
         //cell.bcItemModificationTimeLabel.text = businesscard.modificationTime.convertToString()
@@ -110,6 +160,7 @@ class BusinessCardTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
         
         if let identifier = segue.identifier {
             
@@ -119,11 +170,15 @@ class BusinessCardTableViewController: UITableViewController {
                 
                 let indexPath = tableView.indexPathForSelectedRow!
                 
-                let businesscard = businesscards[indexPath.row]
-                
                 let displayBusinessCardsViewController = segue.destination as! DisplayBusinessCardsViewController
                 
-                displayBusinessCardsViewController.businesscard = businesscard
+                 if searchController.isActive && (searchController.searchBar.text?.characters.count)! > 0 {
+                
+                displayBusinessCardsViewController.businesscard = filteredBusinesscards[indexPath.row]
+                    
+                 } else {
+                    displayBusinessCardsViewController.businesscard = businesscards[indexPath.row]
+                }
                 
             } else if identifier == "addBusinessCard" {
                 print("+ button tapped")
@@ -214,4 +269,12 @@ class BusinessCardTableViewController: UITableViewController {
     }
     */
 
+}
+
+extension BusinessCardTableViewController: UISearchResultsUpdating, UISearchBarDelegate, UITextFieldDelegate {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        filterTableForSearchText(searchText: searchController.searchBar.text!)
+    }
+    
 }

@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8mr-9B-cTY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1304.8" y="667.91604197901052"/>
+            <point key="canvasLocation" x="-161" y="836"/>
         </scene>
         <!--My Wallet-->
         <scene sceneID="wPK-To-2RV">
@@ -107,7 +107,7 @@
         <scene sceneID="vZj-kB-o3x">
             <objects>
                 <collectionViewController id="Fke-MR-2Gz" customClass="MyWalletCollectionViewController" customModule="CardCartOfficial" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="B65-NJ-a7c" customClass="MyWalletCo">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="B65-NJ-a7c" customClass="MyWalletCo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
@@ -126,10 +126,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a3-I9-qP7">
-                                            <rect key="frame" x="35" y="40" width="90" height="80"/>
+                                            <rect key="frame" x="30" y="35" width="100" height="90"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="2a3-I9-qP7" secondAttribute="height" multiplier="9:8" id="DH0-3M-Ygc"/>
-                                                <constraint firstAttribute="height" constant="80" id="af5-Vo-tcS"/>
+                                                <constraint firstAttribute="width" secondItem="2a3-I9-qP7" secondAttribute="height" multiplier="10:9" id="DH0-3M-Ygc"/>
+                                                <constraint firstAttribute="height" constant="90" id="af5-Vo-tcS"/>
                                             </constraints>
                                             <state key="normal" title="Button" image="1600 (1)"/>
                                             <connections>
@@ -173,10 +173,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSP-Yh-85d">
-                                            <rect key="frame" x="45" y="40" width="70" height="80"/>
+                                            <rect key="frame" x="40" y="35" width="80" height="90"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="aSP-Yh-85d" secondAttribute="height" multiplier="7:8" id="Hzx-hG-tcS"/>
-                                                <constraint firstAttribute="height" constant="80" id="v1b-CE-IN1"/>
+                                                <constraint firstAttribute="width" secondItem="aSP-Yh-85d" secondAttribute="height" multiplier="8:9" id="Hzx-hG-tcS"/>
+                                                <constraint firstAttribute="height" constant="90" id="v1b-CE-IN1"/>
                                             </constraints>
                                             <state key="normal" image="finances-15-512"/>
                                             <connections>
@@ -235,14 +235,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="QHt-Fc-oF9">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="businessCardTableViewCell" rowHeight="70" id="E9B-S3-91r" customClass="BusinessCardTableViewCell" customModule="CardCartOfficial" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E9B-S3-91r" id="204-dx-yme">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
@@ -300,7 +295,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Hd-ma-JCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Vwn-oP-WQi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3848.8000000000002" y="-18.440779610194905"/>
+            <point key="canvasLocation" x="2604" y="-366"/>
         </scene>
         <!--Add Business Card-->
         <scene sceneID="S4a-yS-6vx">
@@ -314,12 +309,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rbJ-XG-rdD">
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbJ-XG-rdD">
                                 <rect key="frame" x="0.0" y="341" width="375" height="326"/>
                                 <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="23"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="yes" keyboardAppearance="alert"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                             </textView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XLL-hf-hId">
                                 <rect key="frame" x="168.5" y="485.5" width="37" height="37"/>
@@ -327,12 +323,14 @@
                             </activityIndicatorView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2xl-CW-tSZ">
                                 <rect key="frame" x="50" y="82" width="275" height="30"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Company" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w5R-Dq-mpK">
                                 <rect key="frame" x="50" y="130" width="275" height="30"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -363,14 +361,9 @@
                                     <action selector="addPhotoButtonTapped:" destination="IT2-ZQ-QC9" eventType="touchUpInside" id="L07-qa-qdK"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="YaW-ll-4c8">
-                                <rect key="frame" x="169" y="315" width="37" height="37"/>
-                                <color key="color" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="YaW-ll-4c8" firstAttribute="centerY" secondItem="1dF-ro-ctI" secondAttribute="centerY" id="3hp-1k-vi5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2xl-CW-tSZ" secondAttribute="trailing" constant="34" id="B5S-Yw-35C"/>
                             <constraint firstItem="aXF-e4-EGu" firstAttribute="top" secondItem="Stt-QM-Nwk" secondAttribute="bottom" constant="21" id="F49-J1-y8Q"/>
                             <constraint firstAttribute="trailing" secondItem="rbJ-XG-rdD" secondAttribute="trailing" id="HL6-Tt-03f"/>
@@ -382,7 +375,6 @@
                             <constraint firstItem="rbJ-XG-rdD" firstAttribute="top" secondItem="aXF-e4-EGu" secondAttribute="bottom" constant="22" id="UUO-hf-OcW"/>
                             <constraint firstItem="2xl-CW-tSZ" firstAttribute="leading" secondItem="w5R-Dq-mpK" secondAttribute="leading" id="VYt-wY-K9r"/>
                             <constraint firstItem="2xl-CW-tSZ" firstAttribute="top" secondItem="vB4-h4-0K6" secondAttribute="bottom" constant="18" id="YLf-Lt-4aA"/>
-                            <constraint firstItem="YaW-ll-4c8" firstAttribute="centerX" secondItem="1dF-ro-ctI" secondAttribute="centerX" id="b4Y-DL-A7C"/>
                             <constraint firstItem="w5R-Dq-mpK" firstAttribute="top" secondItem="2xl-CW-tSZ" secondAttribute="bottom" constant="18" id="fmZ-Em-ZnB"/>
                             <constraint firstAttribute="bottom" secondItem="rbJ-XG-rdD" secondAttribute="bottom" id="gZ8-gh-Vt6"/>
                             <constraint firstItem="aXF-e4-EGu" firstAttribute="width" secondItem="Stt-QM-Nwk" secondAttribute="width" id="llh-Zx-NgT"/>
@@ -413,12 +405,47 @@
                         <outlet property="bcresultTextView" destination="rbJ-XG-rdD" id="GvP-V5-2xQ"/>
                         <outlet property="enterBusinessCardCompany" destination="w5R-Dq-mpK" id="opg-NY-GFr"/>
                         <outlet property="enterBusinessCardTitle" destination="2xl-CW-tSZ" id="uFr-Db-flD"/>
+                        <outlet property="saveView" destination="b6f-rW-Txv" id="d3c-Zi-nsc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mCO-3G-Yht" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="XwN-Nf-yK4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4820.625" y="-62.323943661971832"/>
+            <point key="canvasLocation" x="3480.8000000000002" y="-300"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="COL-Q9-ELq">
+            <objects>
+                <viewController id="bCY-Vg-Cie" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SiE-Kk-rFZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="eF9-Sg-Why"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D2I-lW-Bsg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b6f-rW-Txv">
+                                <rect key="frame" x="16" y="-161" width="375" height="667"/>
+                                <subviews>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="YaW-ll-4c8">
+                                        <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                        <color key="color" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.47549606978527609" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="YaW-ll-4c8" firstAttribute="centerX" secondItem="b6f-rW-Txv" secondAttribute="centerX" id="Scc-Ul-uM5"/>
+                                    <constraint firstItem="YaW-ll-4c8" firstAttribute="centerY" secondItem="b6f-rW-Txv" secondAttribute="centerY" id="v0g-Hh-buZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQj-py-UZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4436" y="-174.06296851574214"/>
         </scene>
         <!--Receipts-->
         <scene sceneID="GYw-3x-tJA">
@@ -427,16 +454,11 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="SvB-8V-MQZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="XC0-pS-ivh">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="receiptsTableViewCell" rowHeight="70" id="3Wh-F5-GVG" customClass="ReceiptsTableViewCell" customModule="CardCartOfficial" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Wh-F5-GVG" id="yHd-KL-bH5">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
@@ -462,7 +484,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="rImageView" destination="Tyk-Qe-HPc" id="pwJ-ZV-PSB"/>
                                     <outlet property="rItemStoreLabel" destination="5O0-pq-jQ9" id="ZNQ-Hg-mKH"/>
@@ -494,7 +516,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lm3-dv-225" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="mdL-8m-bEl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3624.8000000000002" y="652.62368815592208"/>
+            <point key="canvasLocation" x="2604" y="338"/>
         </scene>
         <!--Add Receipt-->
         <scene sceneID="wej-Hn-Kzr">
@@ -508,15 +530,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zwD-aV-SPI">
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwD-aV-SPI">
                                 <rect key="frame" x="0.0" y="341" width="430" height="326"/>
                                 <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LEs-CK-Gas">
                                 <rect key="frame" x="50" y="82" width="275" height="30"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -543,6 +566,7 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Store" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xYL-Gz-10m">
                                 <rect key="frame" x="50" y="130" width="275" height="30"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -559,7 +583,7 @@
                                 <color key="color" red="0.28235294117647058" green="0.80784313725490198" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" red="0.9882352941176471" green="0.98431372549019602" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="zwD-aV-SPI" secondAttribute="bottom" id="4ib-iC-W6T"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LEs-CK-Gas" secondAttribute="trailing" constant="34" id="B6l-Pb-852"/>
@@ -606,7 +630,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sai-S3-e0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="fx4-4b-ubq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4432.5" y="643.30985915492954"/>
+            <point key="canvasLocation" x="3481" y="338"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YzS-yU-1I0">
@@ -647,7 +671,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QzA-XX-mwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3010" y="-18"/>
+            <point key="canvasLocation" x="1798" y="-742"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5zZ-04-GVK">
@@ -670,7 +694,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VHW-me-504" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2375" y="560"/>
+            <point key="canvasLocation" x="1798" y="643"/>
         </scene>
     </scenes>
     <resources>

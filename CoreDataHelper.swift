@@ -32,28 +32,34 @@ struct CoreDataHelper{
         }
     }
     
-    static func saveRecepitCard(title: String, store: String, info: String, image: UIImage?){
-        let entity =
-            NSEntityDescription.entity(forEntityName: "ReceiptData",
-                                       in: managedContext)!
-        let receipt = ReceiptData(entity: entity,
-                                    insertInto: managedContext)
-        receipt.title = title
-        receipt.info = info
-        receipt.store = store
-        
-        if image != nil {
-            
-            receipt.image = UIImagePNGRepresentation(image!)! as NSData
-            
-        }
-        
-        do {
-            try managedContext.save()
-        } catch let error as NSError {
-            print("Could not save. \(error), \(error.userInfo)")
-        }
+    static func newReceipt() -> ReceiptData {
+        let entity = NSEntityDescription.insertNewObject(forEntityName: DataType.RECEIPT.rawValue, into: managedContext) as! ReceiptData
+        return entity
     }
+
+    
+//    static func saveReceiptCard(title: String, store: String, info: String, image: UIImage?){
+//        let entity =
+//            NSEntityDescription.entity(forEntityName: "ReceiptData",
+//                                       in: managedContext)!
+//        let receipt = ReceiptData(entity: entity,
+//                                    insertInto: managedContext)
+//        receipt.title = title
+//        receipt.info = info
+//        receipt.store = store
+//        
+//        if image != nil {
+//            
+//            receipt.image = UIImagePNGRepresentation(image!)! as NSData
+//            
+//        }
+//        
+//        do {
+//            try managedContext.save()
+//        } catch let error as NSError {
+//            print("Could not save. \(error), \(error.userInfo)")
+//        }
+//    }
     
     static func loadData(type: DataType) -> [NSManagedObject]{
         var returnData: [NSManagedObject] = []
