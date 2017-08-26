@@ -31,6 +31,7 @@ class ReceiptsTableViewController: UITableViewController {
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         searchController.searchBar.delegate = self
+        searchController.searchBar.placeholder = "Enter Receipt Store"
         
         tableView.tableHeaderView = searchController.searchBar
 

@@ -385,7 +385,7 @@
 				TargetAttributes = {
 					B6FD0ED21F267AF400AA0C53 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = JFZQ9JUDD3;
+						DevelopmentTeam = 7SQ25Y2Y73;
 						ProvisioningStyle = Automatic;
 					};
 					B6FD0EE91F267AF400AA0C53 = {
@@ -759,10 +759,10 @@
 			baseConfigurationReference = F9D8E2D996F781011E8CBF2D /* Pods-CardCartOfficial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JFZQ9JUDD3;
+				DEVELOPMENT_TEAM = 7SQ25Y2Y73;
 				INFOPLIST_FILE = CardCartOfficial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jpapps.CardCart;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaypapps.cardCart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -773,10 +773,10 @@
 			baseConfigurationReference = BEA50892EB4C9959A37D4EFE /* Pods-CardCartOfficial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JFZQ9JUDD3;
+				DEVELOPMENT_TEAM = 7SQ25Y2Y73;
 				INFOPLIST_FILE = CardCartOfficial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jpapps.CardCart;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaypapps.cardCart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

@@ -33,7 +33,7 @@ class BusinessCardTableViewController: UITableViewController {
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         searchController.searchBar.delegate = self
-        
+        searchController.searchBar.placeholder = "Enter Business Card Company"
         tableView.tableHeaderView = searchController.searchBar
         
 
